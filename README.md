@@ -1,1 +1,1 @@
-# projetoCalculadoraPitagorica
+# Calculadora-Pitagoras
