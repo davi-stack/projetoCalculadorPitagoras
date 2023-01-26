@@ -1,2 +1,2 @@
 # Calculadora-Pitagoras
-<td><button class="botao" onclick="seno()">sen</button></td>
+<td><button class="botao" href="https://youtu.be/wOvNNg1zzc4">Explicacao em Videos</button></td>
