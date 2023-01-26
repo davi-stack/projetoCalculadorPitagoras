@@ -1,2 +1,3 @@
 # Calculadora-Pitagoras
-<td><button class="botao" href="https://youtu.be/wOvNNg1zzc4">Explicacao em Videos</button></td>
+<link rel="stylesheet" href="static/CSS/style-1.css">
+<li><a href="templates/index1.html">Calculadora</a></li>
