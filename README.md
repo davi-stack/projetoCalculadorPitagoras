@@ -6,4 +6,4 @@ a partir de clicks, armazena, depois o usuario tem opcoes de preencher lados do 
 Assim que dois lados estiverem preenchidos o programa preenche o terceiro lado. Os botoes 'tg', 'cos' e 'sen', para tangente,
 seno e cosseno só ficam disponíveis quando triangulo estiver todo preenchido. Então quando clicar neles, eles mostram tangente,
 seno, cos do angulo próximo a calculadora, o angulo oposto ao lado marcado com 'CO'(cateto oposto)</p>
-<li><a href="[templates/index1.html](https://youtu.be/wOvNNg1zzc4)">Explicacão em Videos</a></li>
+<li><a href="https://youtu.be/wOvNNg1zzc4">Explicacão em Videos</a></li>
