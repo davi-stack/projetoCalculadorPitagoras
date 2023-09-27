@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case | Estágio em Desenvolvimento Backend</title>
     
-    <!-- Inclua os arquivos CSS e JavaScript do Bootstrap e do FontAwesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="static/CSS/style-1.css">
     
     <!-- Estilos CSS personalizados -->
-    <style>
-        /* Seus estilos personalizados aqui */
-    </style>
 </head>
  
 <body>
@@ -48,11 +44,62 @@
         </div>
     </nav>
 
-    <div class="accordion" id="accordionExample">
-        <!-- Conteúdo do acordeão aqui -->
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Creditos
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         'https://www.youtube.com/watch?v=0VVqwe5DpGc' 'https://www.youtube.com/watch?v=42TShjXR0m0' 'https://www.youtube.com/watch?v=WWVEymSt1iI' 'https://www.bastosmaia.com.br/a-origem-do-teorema-de-pitagoras' 
     </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Resumo do código
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+A pagina principal é um menu, feito com nav. A ideia eh que sejam links para algumas redes sociais e a pagina da calculadora, apenas para apresentação. Existe tambem uma regiao aside para texto. Existem alguns resumos, inclusive esse que vao ser mostrados nessa área dependendo de onClick no menu. O botão 'Calculadora' dispara um link para parte principal do projeto. A calculadora é uma table, dispara eventos onClick de funcoes feitas em javaScript, basicamente ele lê numeros no 
+		</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Quem foi pitágoras?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
 
-    <!-- Scripts JavaScript (colocar no final do corpo) -->
+
+A matemática teve vários nomes importantes contribuindo com teorias e descobertas. Um dos mais importantes teóricos dessa matéria foi um grego que viveu há mais de 2000 anos e continua a influenciar o mundo matemático até hoje. Conheça mais sobre Pitágoras e seu famoso teorema logo abaixo.Pitágoras foi um filósofo, matemático e físico grego nascido em 570 a.C., na ilha de Samos. Seu pai era um gravador chamado Mnesarco. Não existem muitos registros sobre o começo da vida de Pitágoras, só sabe-se que ainda jovem já conhecia diversas áreas de estudo. Em busca de mais conhecimento, estima-se que Pitágoras tenha viajado por lugares como Egito, Creta e Palestina. Conta a lenda que foi numa dessas viagens ao Egito que o grego formulou uma de suas teorias mais famosas e influentes: o teorema de Pitágoras. No Egito ele teria se impressionado com as pirâmides e começado a estudar a estrutura dos triângulos retângulos, o que levou à formulação de seu teorema.O teorema de Pitágoras é uma regra que pode ser aplicada a qualquer triângulo retângulo, uma figura geométrica de três lados que possua um ângulo reto (de 90°). Essa é considerada a maior descoberta do pensador grego e faz parte do currículo escolar de boa parte do mundo. A lei matemática descoberta pelo matemático tem a ver com os lados do triângulo. Segundo ela, a soma dos quadrados do valor dos menores lados de um triângulo retângulo (chamados de catetos) é equivalente ao quadrado do valor do maior lado (chamado de hipotenusa). Assim chega-se à fórmula a2 + b2 = h2, onde a e b são os valores dos catetos e h é o valor da hipotenusa.Sociedades anteriores a de Pitágoras já utilizavam alguns dos fundamentos da teoria do filósofo na construção de seus monumentos, porém ninguém havia formulado uma lei universal até ele. Na geometria, o teorema é aplicado a diversos tipos de problemas e é uma parte fundamental da geometria plana. Através de sua aplicação, é possível descobrir a distância entre dois pontos baseando-se num terceiro que forme um triângulo retângulo. Ele também é utilizado na construção civil e na aeronáutica na hora de formular rotas para as aeronaves. A descoberta de Pitágoras mudou o mundo da matemática!
+
+		</div>
+    </div>
+	  
+  </div>
+	  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Qual ideia da Api?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+A ideia da primeira API é fornecer um opcao de get para tudo que foi necessario, que está em um arquivo requerements, que foi feito com pip 'freeze > requerements', também fornecer da mesma forma o arquivo texto de resumo do codigo principal.
+		</div>
+    </div>
+	  
+  </div>
+</div>
+    
+
     <script src="static/JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
