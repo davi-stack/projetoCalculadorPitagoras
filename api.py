@@ -1,23 +1,26 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, request, jsonify
+
 app = Flask(__name__)
-#if __name__ == "__main__"
-#para que usem apenas a operacao principal
 
-@app.route("/Calculadora/requerements", methods=["GET"])
-def requerements():
-    return  jsonify(open('requirements.txt', 'r'))
+def calcular_pitagoras(a, b):
+    c = (a**2 + b**2)**0.5
+    return c
 
-@app.route("/Calculadora/resumo", methods=["GET"])
-def resumo():
-    return  open('../resumoCodigoCalculadora.txt', 'r')
+@app.route('/calcular_pitagoras', methods=['POST'])
+def calcular():
+    data = request.get_json()
 
+    if 'a' not in data or 'b' not in data:
+        return jsonify({'erro': 'Os parâmetros "a" e "b" são necessários'}), 400
 
-@app.route("/Calculadora")
-def Calculadora():
-    return  render_template('index.html')
-    
-    
-    
-#if __name__ == "__main__"
-app.run(debug=True)
+    a = data['a']
+    b = data['b']
 
+    try:
+        resultado = calcular_pitagoras(float(a), float(b))
+        return jsonify({'resultado': resultado})
+    except ValueError:
+        return jsonify({'erro': 'Certifique-se de que "a" e "b" são números válidos'}), 400
+
+if __name__ == '__main__':
+    app.run(debug=True)
